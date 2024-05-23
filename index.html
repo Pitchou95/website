@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg " style="background-color: rgba(23, 162, 184, 0.85);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.jpg " alt="" width="75" height="64">
+            </a>
+            <a class="navbar-brand fs-3 text-capitalize" href="#">z-tech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Product
+                        </a>
+                        <ul class="dropdown-menu bg-light " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-primary " href="#">Phone</a></li>
+                            <li><a class="dropdown-item text-primary" href="#">HeadPhones</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-primary" href="#">LapTop</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn text-light  btn-primary" type="submit">Search</button>
+                </form>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Login
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content ">
+                            <div class="modal-header bg-info">
+                                <h5 class="modal-title text-light" id="exampleModalLabel">login</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body ">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label text-info">Email
+                                            address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone
+                                            else.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label text-info">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked"
+                                            checked>
+                                        <label class="form-check-label text-info" for="flexSwitchCheckChecked">Checked
+                                            switch
+                                            checkbox input</label>
+                                    </div>
+                            </div>
+                            <div class="bg-light clearfix">
+                                <button type="button" class="btn btn-info  p-2 m-3 text-light">Login</button>
+                                <button type="button" class="btn btn-info text-light p-2 m-3 float-end">Close</button>
+                            </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- card -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/headphone.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block  p-4"
+                    style="background-color: rgba(23, 162, 184, 0.55); color: white;">
+                    <h5 class="h2 text-capitalize">HeadPhone</h5>
+                    <p class="text-capitalize fs-5">best headphone.</p>
+                    <button type="button" class="btn btn-info text-light fs-5" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/laptop.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block p-4"
+                    style="background-color: rgba(23, 162, 184, 0.55); color: white;">
+                    <h5 class="h2 text-capitalize">laptop</h5>
+                    <p class="text-capitalize fs-5">best laptop.</p>
+                    <button type="button" class="btn btn-info text-light fs-5" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/phones.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block p-4"
+                    style="background-color: rgba(23, 162, 184, 0.55); color: white;">
+                    <h5 class="h2 text-capitalize">phones</h5>
+                    <p class="text-capitalize fs-5">best phones.</p>
+                    <button type="button" class="btn btn-info text-light fs-5" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- card 2 -->
+    <div class="card w-100">
+        <div class="card-body p-5" style="background-color: rgba(23, 162, 184, 0.22); color: white;">
+            <h5 class="card-title text-capitalize h2 text-info">welcom</h5>
+            <p class="card-text text-capitalize text-dark fs-5">With supporting text below as a natural lead-in to
+                additional
+                content.</p>
+            <a href="#" class="btn btn-light text-info text-capitalize rounded-3 btn-lg">learn mor</a>
+        </div>
+    </div>
+    <div class="card w-100 mt-3 mb-3">
+        <div class="card-body bg-primary">
+            <h5 class="card-title text-center text-light text-capitalize p-5 h1 ">z-electronic</h5>
+        </div>
+    </div>
+    <div class="accordion accordion-flush mb-4" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed text-capitalize fs-4"
+                    style="background-color: rgba(23, 162, 184, 0.62); color: black;" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                    aria-controls="flush-collapseOne">
+                    Phone 14 Pro Max
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse " aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    Display: 6.7-inch Super Retina XDR, 2796 x 1290 resolution
+                    Processor: A16 Bionic chip
+                    RAM: 6GB
+                    Storage: 128GB/256GB/512GB/1TB
+                    Camera: Triple setup - 48MP main, 12MP ultra-wide, 12MP telephoto
+                    Battery: 4352mAh with 27W fast charging
+                    Operating System: iOS 16
+                    Features: 5G connectivity, Face ID, Ceramic Shield, IP68 water and dust resistance.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed text-capitalize fs-4"
+                    style="background-color: rgba(23, 162, 184, 0.62); color: black;" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                    aria-controls="flush-collapseTwo">
+                    Sony WH-1000XM5
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    Type: Over-ear, wireless
+                    Noise Cancellation: Industry-leading active noise cancellation with multiple microphones
+                    Battery Life: Up to 30 hours with noise cancellation on, 38 hours with it off
+                    Connectivity: Bluetooth 5.2, NFC, 3.5mm audio jack
+                    Features: Adaptive Sound Control, touch controls, voice assistant integration (Google Assistant,
+                    Alexa), Quick Attention Mode
+                    Sound Quality: High-Resolution Audio support, DSEE Extreme upscaling</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed text-capitalize fs-4"
+                    style="background-color: rgba(23, 162, 184, 0.62); color: black;" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                    aria-controls="flush-collapseThree">
+                    apple MacBook Pro 16-inch (2023)
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">A
+                    Display: 16-inch Liquid Retina XDR, 3456 x 2234 resolution
+                    Processor: Apple M2 Pro/M2 Max
+                    RAM: 16GB/32GB/64GB
+                    Storage: 512GB/1TB/2TB/4TB/8TB SSD
+                    Graphics: Integrated 16-core/32-core GPU
+                    Battery Life: Up to 21 hours
+                    Operating System: macOS
+                    Features: Magic Keyboard with Touch ID, six-speaker sound system, three Thunderbolt 4 ports, HDMI,
+                    SDXC card slot, high-fidelity audio, Wi-Fi 6E, 1080p FaceTime HD camera</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card text-capitalize">
+        <h5 class="card-header bg-primary text-light text-center h2">translate from arabic to frensh</h5>
+        <div class="card-body bg-info ">
+            <h5 class="card-title text-light">whrite and translate <span class="text-danger">press
+                    here</span></h5>
+
+            <!-- Button trigger modal -->
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                tabindex="-1">
+                <div class="modal-dialog modal-dialog-top">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalToggleLabel">Text Copied</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-end">
+                            تم النسخ
+                        </div>
+                        <div class="modal-footer ">
+                            <button class="btn btn-primary text-capitalize" data-bs-target="#exampleModalToggle2"
+                                data-bs-toggle="modal" data-bs-dismiss="modal">ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModalToggle"
+                data-bs-placement="right" title="copy">
+                copy
+            </button>
+            <div class="form-floating ">
+                <textarea class="form-control " placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2">traduction</label>
+            </div>
+        </div>
+    </div>
+    <!-- card tr 2 -->
+    <div class="card mt-3 text-capitalize">
+        <h5 class="card-header bg-primary text-light text-center h2">translate from arabic to english</h5>
+        <div class="card-body " style="background-color: rgba(23, 162, 184, 0.62); color: black;">
+            <h5 class="card-title text-light">whrite and translate <span class="text-danger">press here</span></h5>
+            <!-- Button trigger modal -->
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                tabindex="-1">
+                <div class="modal-dialog modal-dialog-top">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalToggleLabel">Text Copied</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-end">
+                            تم النسخ
+                        </div>
+                        <div class="modal-footer ">
+                            <button class="btn btn-primary text-capitalize" data-bs-target="#exampleModalToggle2"
+                                data-bs-toggle="modal" data-bs-dismiss="modal">ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModalToggle"
+                data-bs-placement="right" title="copy">
+                copy
+            </button>
+
+
+            <div class="form-floating ">
+                <textarea class="form-control " placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2">traduction</label>
+            </div>
+        </div>
+    </div>
+    <!-- card tr 3 -->
+    <div class="card mt-3 text-capitalize">
+        <h5 class="card-header bg-primary text-light text-center h2">translate from frensh to english</h5>
+        <div class="card-body " style="background-color: rgba(23, 162, 184, 0.51); color: black;">
+            <h5 class="card-title text-light">whrite and translate <span class="text-danger">press here</span>
+            </h5>
+
+            <!-- Button trigger modal -->
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                tabindex="-1">
+                <div class="modal-dialog modal-dialog-top">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalToggleLabel">Text Copied</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-end">
+                            تم النسخ
+                        </div>
+                        <div class="modal-footer ">
+                            <button class="btn btn-primary text-capitalize" data-bs-target="#exampleModalToggle2"
+                                data-bs-toggle="modal" data-bs-dismiss="modal">ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModalToggle"
+                data-bs-placement="right" title="copy">
+                copy
+            </button>
+            <div class="form-floating ">
+                <textarea class="form-control " placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2">traduction</label>
+            </div>
+        </div>
+    </div>
+    <!-- image  -->
+    <div class="w-100 image"></div>
+
+    <!-- 8 cards -->
+    <div class="container mt-5">
+        <div class="row align-items-start">
+            <div class="col-4">
+                <div class="card cards shadow p-3 mb-5 rounded bg-info" style="width: 18rem;">
+                    <img src="images/iphone 12.jpg" class="card-img-top " alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize text-center">iphone 12</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary position-absolute bottom-0 end-0 m-2">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 ">
+                <div class="card cards shadow p-3 mb-5 rounded bg-info" style="width: 18rem;">
+                    <img src="images/mac.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize text-center">mac</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary position-absolute bottom-0 end-0 m-2">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card cards shadow p-3 mb-5 rounded bg-info" style="width: 18rem;">
+                    <img src="images/i-mac.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize text-center">i mac</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary position-absolute bottom-0 end-0 m-2">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card cards shadow p-3 mb-5 rounded bg-info" style="width: 18rem;">
+                    <img src="images/ipade.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize text-center">ipade</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary position-absolute bottom-0 end-0 m-2">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card cards shadow p-3 mb-5 rounded bg-info" style="width: 18rem;">
+                    <img src="images/apple watch.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize text-center">apple watch</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary position-absolute bottom-0 end-0 m-2">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card cards shadow p-3 mb-5 rounded bg-info" style="width: 18rem;">
+                    <img src="images/apple vesion.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize text-center">apple vesio </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary position-absolute bottom-0 end-0 m-2">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card cards shadow p-3 mb-5 rounded bg-info" style="width: 18rem;">
+                    <img src="images/fast charge.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize text-center">fast charge</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary position-absolute bottom-0 end-0m-2">Go somewhere</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card cards shadow p-3 mb-5 rounded bg-info" style="width: 18rem;">
+                    <img src="images/moise apple.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-capitalize text-center">moise aple</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary position-absolute bottom-0 end-0 m-2">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- image 2 -->
+    <div class="w-auto p-3 image-2"></div>
+    <!-- div-thanks -->
+    <h2 class="text-capitalize text-center text-light  mt-5 h2"> <span class="bg-info  p-2">products</span></h2>
+    <div class="container mt-5">
+        <div class="row align-items-start">
+            <div class="col-4 img-card">
+                <div class="image-container">
+                    <img src="images/watch.jpg" class="w-100 px-auto rounded-5  mt-3 img-thnk" style="height: 450px;"
+                        alt="watch">
+
+                </div>
+            </div>
+            <div class="col-4 img-card">
+                <div class="image-container ">
+                    <img src="images/tv.jpg" class="w-100  px-auto mt-3 rounded-5 img-thnk tv" style="height: 450px;"
+                        alt="tv">
+
+                </div>
+            </div>
+            <div class="col-3 ">
+                <div class="image-container">
+                    <img src="images/heandphone.jpg" class="w-100  px-auto mt-3 rounded-5 img-thnk"
+                        style="height: 450px;" alt="...">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="text-center text-capitalize text-light m-5 p-5 h2 fs-1 ">
+        <span class="bg-info  p-2">electronic news</span>
+    </h1>
+
+    <div>
+        <ul class="icons fs-1 d-flex align-items-end flex-column bd-highlight m-5 pt-5  fixed-top">
+            <li class=" "><a href=""><i class="text-primary fa-brands fa-facebook"></i></a></li>
+            <li><a href=""> <i class="text-success  fab fa-whatsapp"></i>
+                </a></li>
+            <li><a href=""> <i class="text-danger fa-brands fa-instagram"></i>
+                </a></li>
+            <li><a href=""> <i class="text-primary fa-brands fa-linkedin"></i>
+                </a></li>
+        </ul>
+
+    </div>
+    <div class="card-3 bg-light">
+        <img src="./images/iphone-14.jpg" class="img-card1 rounded-top float-end rounded-circle" alt="">
+        <h1 class="title1"> iPhone 14</h1>
+        <h4>September 16, 2022</h4>
+        <span class="line1"></span>
+        <p>The iPhone 14 colors are Midnight, Starlight, Blue, Purple, Red and Yellow. We tested the
+            paler blue model, which is an attractive cornflower blue shade. Apple announced the iPhone 14 in yellow on
+            March 7</p>
+    </div>
+    <div class="card-3 bg-light">
+
+        <video controls autoplay src="./images/vesio.mp4" type="video/mp4" class="img-card2 float-start"></video>
+        <h1 class="title-3">apple vesio</h1>
+        <h4 class="H3">May 7, 2024</h4>
+        <span class="line2"></span>
+        <p class="prh-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum at accusamus harum
+            libero repellendus possimus! Eius non maxime doloribus enim, quam, magni aperiam a consequatur qui placeat
+            tenetur expedita provident!</p>
+    </div>
+    <div class="card-3 bg-light">
+        <img src="./images/ipad-pro.png" class="img-card3 rounded-end float-end rounded-circle" alt="">
+        <h1 class="title1"> iPad air 202</h1>
+        <h4>May 7, 2024</h4>
+        <span class="line3"></span>
+        <p class="text-start">The iPad Air 2024 delivers a larger 13-inch display, impressive M2 performance and long
+            battery life for considerably less money than an iPad Pro. You also get Apple Pencil Pro and Magic Keyboard
+            support and strong audio. But I wouldn’t replace my laptop with this tablet.
+
+        </p>
+    </div>
+    <div>
+        <h1 class="text-capitalize text-center mt-5  "> <span class="bg-info  p-2">about us</span></h1>
+
+    </div>
+    <div class=" d-flex justify-content-center mt-5">
+        <div class="card  shadow-lg bg-body  " style="width: 18rem;">
+            <div class=" card-body d-flex flex-column">
+                <h5 class="card-title mb-auto text-info text-capitalize text-center fs-3">contact us</h5>
+                <img src="images/whatsapp.png" class="social-img bg-dark align-self-center" alt="">
+
+                <div class="text-center social-link ">
+                    <a href="#" class="stretched-link-primary">link</a>
+                </div>
+            </div>
+        </div>
+        <div class=" card content-social shadow-lg bg-body " style="width: 18rem;">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title mb-auto text-info text-capitalize text-center fs-3">subscribe</h5>
+                <img src="images/insta.png" class="social-img bg-dark align-self-center" alt="">
+
+                <div class="text-center social-link">
+                    <a href="#" class="stretched-link-primary">link</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-lg bg-body " style="width: 18rem;">
+            <div class="card-body  d-flex flex-column">
+                <h5 class="card-title mb-auto text-info text-capitalize text-center fs-3">about me</h5>
+                <img src="images/in.png" class="social-img bg-dark align-self-center" alt="">
+
+                <div class="text-center social-link">
+                    <a href="#" class="stretched-link-primary">link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-light text-center p-5 mt-2">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 text-top">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#"><i class="bi bi-windows"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="bi bi-github"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="bi bi-ubuntu"></i></a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-12 textr-bottom fs-4">
+                    <p class="mb-0">© 2024 Your Company. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.image {
+  margin-top: 50px;
+  height: 480px;
+  background-image: url("../images/download.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.cards:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.cards::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgb(134, 216, 235);
+  transition: 1s;
+  opacity: 0;
+}
+.cards:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+body {
+  width: 100%;
+  background-image: url("../images/Background\ .jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  /* height: 8400px; */
+}
+
+.cards::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(134, 216, 235);
+  transition: 1s;
+  opacity: 0;
+}
+.cards:hover::before {
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+.image-2 {
+  margin-top: 50px;
+  height: 480px;
+  background-image: url("../images/modern-2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.img-thnk:hover {
+  padding: 20px;
+  transition: 0.5s;
+}
+.icons {
+  margin-left: 30px;
+}
+.icons li {
+  list-style: none;
+}
+.card-3 {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+}
+.img-card3 {
+  width: 350px;
+  height: 250px;
+}
+.img-card1 {
+  width: 270px;
+  height: 250px;
+}
+.img-card2 {
+  margin-right: 20px;
+  width: 350px;
+  height: 220px;
+}
+.title1,
+.title-3 {
+  color: blue;
+  text-transform: capitalize;
+  margin-left: 30px;
+}
+.card-3 h4 {
+  color: rgb(137, 137, 230);
+}
+.card-3 p {
+  margin-left: 20px;
+  font-size: 22px;
+}
+.card-3 .H3,
+.title-3 {
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-left: 280px;
+}
+
+.card-3 h4,
+p {
+  text-transform: capitalize;
+  margin-left: 30px;
+}
+
+.line1 {
+  display: block;
+  margin: 10px auto 45px 26px;
+  width: 160px;
+  height: 5px;
+  background-color: royalblue;
+}
+.line2 {
+  display: block;
+  margin: 10px auto 20px 370px;
+  width: 125px;
+  height: 5px;
+  background-color: royalblue;
+}
+.line3 {
+  display: block;
+  margin: 10px auto 45px 26px;
+  width: 110px;
+  height: 5px;
+  background-color: royalblue;
+}
+.social-img {
+  width: 150px;
+  height: 150px;
+  margin-top: 40px;
+  border-radius: 360px;
+}
+.content-social {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.stretched-link-primary {
+  text-transform: capitalize;
+  font-size: 22px;
+  text-decoration: none;
+}
+footer {
+  width: 100%;
+  height: 100%;
+}
+.list-inline li {
+  font-size: 35px;
+  margin: 35px;
+}
